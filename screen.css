@@ -44,6 +44,12 @@ img {
 
 }
 
+figure {
+  width: 40%;
+  height: 40%;
+  background-position: 25% 75%;
+}
+
 #footer {
   clear: both;
   float: none;
