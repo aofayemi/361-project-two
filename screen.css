@@ -16,13 +16,10 @@ html{
 }
 
 main{
-    padding-left: 10px;
+    padding-left: 20px;
 }
- /*change to a class name */ul li{
-   padding-left: 90px;
-   list-style-type: disc;
 
- }
+
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -40,7 +37,7 @@ body {
   background-color: yellow;
   padding-bottom: 10px;
   padding-top: 10px;
-  padding-left: 0;
+
 }
 
 h1,h2,h3,h4{
@@ -51,6 +48,18 @@ h1,h2,h3,h4{
   font-weight: bold;
 }
 
+h2{
+  color: #dc143c;
+}
+
+#about{
+  text-align: center;
+  padding: 5%;
+  color: red;
+  font-size: 1.602em;
+
+}
+
 /* Responsive Image Style */
 
 img {
@@ -59,24 +68,33 @@ img {
 
 }
 
-
-/* img {
-  display: block;
-  max-width: 100%;
-  margin: 60%;
-  padding: 15%;
+.images {
+  background: #222;
+  padding: 5px;
 }
 
-figure {
-  width: 40%;
-  height: 40%;
-  background-position: 25% 75%;
+.images li {
+  padding: 5px;
 }
-*/
+
+.toolbox {
+  list-style-type: disc;
+}
+
+.stem {
+  list-style-type: disc;
+}
+
+
+
+.activities, .Senator, .skill, .social {
+  list-style-type: disc;
+}
+
 #footer {
   clear: both;
   float: none;
-  font-size: 80%;
+  font-size: 0.702em;
   line-height: 1.2em ;
 }
 
@@ -88,22 +106,27 @@ figure {
     line-height: 1.2em; /* 28.833 * 120% = 34.59px/28.833px */
   }
 
-  img {
+  .images li {
+    float: left;
     display: block;
-    max-width: 100%;
-    margin: 60%;
-    padding: 15%;
+    max-width: 300%;
+    float: left;
+    overflow: auto;
   }
-
+/*
   figure {
     width: 40%;
     height: 40%;
     background-position: 25% 75%;
+    */
   }
 
 }
 
 @media screen and (min-width: 760px) {
+.images li {
+  width: 33.33%;
 
+}
 
 }
