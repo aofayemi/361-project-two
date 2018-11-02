@@ -16,14 +16,14 @@ html{
 }
 
 main{
-    padding-left: 20px;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
 }
 
 
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 1.222em o.5em;
   background-image: linear-gradient(to bottom,);
   color: #222;
   background-color: #dcdcdc;
@@ -35,17 +35,19 @@ body {
   text-align: center;
   text-decoration: none;
   background-color: yellow;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
 
 }
 
+
 h1,h2,h3,h4{
   font-family: 1.222em;
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   border: black;
   font-weight: bold;
+  align-content: space-between;
 }
 
 h2{
@@ -59,29 +61,28 @@ h2{
   font-size: 1.602em;
 
 }
+li {
+  margin-left: 1em;
+}
 
 /* Responsive Image Style */
 
 img {
-  display: block;
-  width: 100%;
+  display: flex;
+  width: 90%;
 
-}
 
-.images {
-  background: #222;
-  padding: 5px;
 }
 
 .images li {
-  padding: 5px;
+  background: #222;
+  padding: 0.3em;
+  box-sizing: border-box;
+  align-content: center;
 }
 
-.toolbox {
-  list-style-type: disc;
-}
 
-.stem {
+.stem, .club, .toolbox {
   list-style-type: disc;
 }
 
@@ -90,7 +91,12 @@ img {
 .activities, .Senator, .skill, .social {
   list-style-type: disc;
 }
-
+/*
+.top {
+  width: .9em;
+  height: .8em;
+}
+*/
 #footer {
   clear: both;
   float: none;
@@ -113,19 +119,13 @@ img {
     float: left;
     overflow: auto;
   }
-/*
-  figure {
-    width: 40%;
-    height: 40%;
-    background-position: 25% 75%;
-    */
-  }
 
 }
 
 @media screen and (min-width: 760px) {
 .images li {
   width: 33.33%;
+  align-content: center;
 
 }
 
