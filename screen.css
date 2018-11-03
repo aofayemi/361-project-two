@@ -70,15 +70,8 @@ li {
 img {
   display: flex;
   width: 90%;
-
-
-}
-
-.images li {
-  background: #222;
-  padding: 0.3em;
+  padding-left: 2em;
   box-sizing: border-box;
-  align-content: center;
 }
 
 
@@ -91,12 +84,9 @@ img {
 .activities, .Senator, .skill, .social {
   list-style-type: disc;
 }
-/*
-.top {
-  width: .9em;
-  height: .8em;
-}
-*/
+
+
+
 #footer {
   clear: both;
   float: none;
@@ -112,21 +102,31 @@ img {
     line-height: 1.2em; /* 28.833 * 120% = 34.59px/28.833px */
   }
 
-  .images li {
+  img {
     float: left;
     display: block;
     max-width: 300%;
     float: left;
     overflow: auto;
+    box-sizing: border-box;
+  }
+
+  figcaption {
+    clear: both;
   }
 
 }
 
-@media screen and (min-width: 760px) {
-.images li {
-  width: 33.33%;
+@media screen and (min-width: 1000px) {
+img {
+  display: flex;
+  width: 50%;
   align-content: center;
-
+  overflow: auto;
+  box-sizing: border-box;
+}
+figcaption {
+  clear: both;
 }
 
 }
