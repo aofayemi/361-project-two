@@ -63,10 +63,10 @@ img {
   box-sizing: border-box;
 }
 
+/*bullet points for sections in resumer */
 
-.activities, .Senator,
-.skill, .social
-.stem, .club, .toolbox {
+.activities, .senator, .stem,
+.skill, .social, .club, .toolbox {
   list-style-type: disc;
 }
 
@@ -76,7 +76,7 @@ img {
   color: red;
   font-size: 1.602em;
 }
-
+/* footer element*/
 #footer {
   clear: both;
   float: none;
@@ -115,7 +115,6 @@ img {
   width: 50%;
   align-content: center;
   overflow: auto;
-/*  box-sizing: border-box; */
 }
 figcaption {
   clear: both;
