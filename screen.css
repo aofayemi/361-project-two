@@ -95,7 +95,7 @@ img {
   img {
     float: left;
     display: block;
-    max-width: 300%;
+    max-width: 50%; 
     float: left;
     overflow: auto;
     box-sizing: border-box;
@@ -115,6 +115,7 @@ img {
   width: 50%;
   align-content: center;
   overflow: auto;
+
 }
 figcaption {
   clear: both;
