@@ -10,24 +10,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /*SS for Resume*/
-html{
+html {
   font-size: 1.125em;  /* 18px */
   line-height: 1.2em; /* 18 * 120% = 21.6px/18px */
 }
 
-main{
-    padding-left: 1.2em;
-    padding-right: 1.2em;
+main {
+  padding-left: 1.2em; /* 18px * 120% = 21.6px, 22px / 18px = 1.222em */
+  padding-right: 1.2em; /* 18px * 120% = 21.6px, 22px / 18px = 1.222em */
 }
 
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #dcdcdc;
-  }
+}
 
 
- #navigation {
+#navigation {
   color: red;
   text-align: center;
   text-decoration: none;
@@ -38,7 +38,10 @@ body {
 }
 
 /*heading elements*/
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
   padding-top: 1em;
   padding-bottom: 1em;
   border: black;
@@ -46,7 +49,7 @@ h1,h2,h3,h4{
   align-content: space-between;
 }
 
-h2{
+h2 {
   color: #dc143c;
 }
 
@@ -65,8 +68,13 @@ img {
 
 /*bullet points for sections in resumer */
 
-.activities, .senator, .stem,
-.skill, .social, .club, .toolbox {
+.activities,
+.senator,
+.stem,
+.skill,
+.social,
+.club,
+.toolbox {
   list-style-type: disc;
 }
 
@@ -75,7 +83,7 @@ img {
   list-style-type: disc;
 }
 
-#about{
+#about {
   text-align: center;
   padding: 5%;
   color: red;
@@ -92,7 +100,7 @@ img {
 /*media screen for 626PX */
 @media screen and (min-width: 39.125em) {
 
-  h2{
+  h2 {
     font-size: 1.602em;  /* 28.833px/18px */
     line-height: 1.2em; /* 28.833 * 120% = 34.59px/28.833px */
   }
@@ -101,7 +109,6 @@ img {
     float: left;
     display: block;
     max-width: 50%;
-    float: left;
     overflow: auto;
     box-sizing: border-box;
   }
@@ -111,19 +118,17 @@ img {
   }
 
 }
-
-/* media screen for 1000px*/
+/* media screen for 1000px */
 @media screen and (min-width: 1000px) {
 
-img {
-  display: flex;
-  width: 50%;
-  align-content: center;
-  overflow: auto;
+  img {
+    display: flex;
+    width: 50%;
+    align-content: center;
+    overflow: auto;
+  }
 
-}
-figcaption {
-  clear: both;
-}
-
+  figcaption {
+    clear: both;
+  }
 }
